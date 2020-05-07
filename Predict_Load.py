@@ -28,7 +28,8 @@ lblInfo = Label(Tops, font=('arial', 18, 'bold'), text="Aplikasi untuk mempredik
 lblInfo.grid(row=1, column=0)
 lblInfo = Label(Tops, font=('arial', 15, 'bold'), text=localtime, fg="Steel Blue", bd=10, anchor='w')
 lblInfo.grid(row=2, column=0)
-
+lblInfo = Label(Tops, font=('arial', 15, 'bold'), text="Created by Dheny Dwi Prakoso and Ricky Suwandy", fg="Steel Blue", bd=10, anchor='w')
+lblInfo.grid(row=2, column=0)
 #------------- fungsi
 def cooling_load():
     a = float(relcom.get())
@@ -49,7 +50,8 @@ def cooling_load():
 
     predict = loaded_model.predict(df)
     predict = pd.DataFrame(predict)
-    cload = str(predict[1].to_numpy())
+    cload = predict[1].to_numpy()
+    cload = str(cload[0])
     cooling.set(cload)
 def heating_load():
     a = float(relcom.get())
@@ -70,9 +72,10 @@ def heating_load():
 
     predict = loaded_model.predict(df)
     predict = pd.DataFrame(predict)
-    hload = str(predict[0].to_numpy())
+    hload = predict[0].to_numpy()
+    hload = str(hload[0])
     heating.set(hload)
-    
+
 def qExit():
     root.destroy()
 
