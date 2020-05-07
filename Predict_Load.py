@@ -135,13 +135,13 @@ txtGlazing=Entry(f1, font=('arial', 14, 'bold'), textvariable=glazing, bd=10, in
                    bg="powder blue", justify = 'right')
 txtGlazing.grid(row=4,column=3)
 
-lblCooling = Label(f1, font=('arial', 14, 'bold'), text="Cooling Load (kWh/m)", bd=16, anchor = 'w')
+lblCooling = Label(f1, font=('arial', 14, 'bold'), text="Cooling Load (kWh/(m^2))", bd=16, anchor = 'w')
 lblCooling.grid(row=5,column=0)
 txtCooling=Entry(f1, font=('arial', 14, 'bold'), textvariable=cooling, bd=10, insertwidth=4,
                    bg="white", justify = 'right')
 txtCooling.grid(row=5,column=1)
 
-lblHeating = Label(f1, font=('arial', 14, 'bold'), text="Heating Load (kWh/m)", bd=16, anchor = 'w')
+lblHeating = Label(f1, font=('arial', 14, 'bold'), text="Heating Load (kWh/(m^2))", bd=16, anchor = 'w')
 lblHeating.grid(row=5,column=2)
 txtHeating=Entry(f1, font=('arial', 14, 'bold'), textvariable=heating, bd=10, insertwidth=4,
                    bg="white", justify = 'right')
