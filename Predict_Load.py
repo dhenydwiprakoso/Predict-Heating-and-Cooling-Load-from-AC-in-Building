@@ -123,7 +123,7 @@ txtRoof=Entry(f1, font=('arial', 14, 'bold'), textvariable=roof, bd=10, insertwi
                    bg="powder blue", justify = 'right')
 txtRoof.grid(row=0,column=3)
 
-lblOHeight = Label(f1, font=('arial', 14, 'bold'), text="Overal Height (m^2)", bd=16, anchor = 'w')
+lblOHeight = Label(f1, font=('arial', 14, 'bold'), text="Overal Height (m)", bd=16, anchor = 'w')
 lblOHeight.grid(row=2,column=2)
 txtOHeight=Entry(f1, font=('arial', 14, 'bold'), textvariable=oheight, bd=10, insertwidth=4,
                    bg="powder blue", justify = 'right')
